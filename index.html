@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | BPO</title>
+    <!--Web Logo-->
+    <link rel="icon" type="image/x-icon" href="image/ficon.png">
+    <!--Bootstrap CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Bootstrap icon link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!--CSS Link-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <!--AOS link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-sm fixed-top" style="background-color: #31473A; font-size: 18px;">
+        <a class="navbar-brand ms-5" style="font-size: 35px;" href="index.html"><img src="image/ficon.png" width="70px"></a>
+        <button class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#my_navbar" style="color: white; border-color: white;">
+            <span><i class="bi bi-list" style="color: white; font-size: 30px;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="my_navbar">
+            <ul class="top-navbar navbar-nav ms-auto me-auto" style="text-align: center;">
+                <li class="nav-item me-4 ms-3">
+                    <a class="nav-link" href="index.html" style="color: white;">Home</a>
+                </li>
+                <li class="nav-item dropdown me-1 ms-3">
+                    <a class="nav-link" data-bs-toggle="dropdown" href="#" style="color: white;">Our Work<i class="bi bi-caret-down-fill ms-2"></i></a>
+                    <ul class="dropdown-menu" style="text-align: center;">
+                        <li><a class="dropdown-item" href="people.html">People</a></li>
+                        <li><a class="dropdown-item" href="places.html">Places</a></li>
+                        <li><a class="dropdown-item" href="wild_life.html">Wildlife</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown me-1 ms-3">
+                    <a class="nav-link" data-bs-toggle="dropdown" href="#" style="color: white;">Get Involed<i class="bi bi-caret-down-fill ms-2"></i></a>
+                    <ul class="dropdown-menu" style="text-align: center;">
+                        <li><a class="dropdown-item" href="donate.html">Donate</a></li>
+                        <li><a class="dropdown-item" href="take_action.html">Take Action</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="event.html" style="color: white;">Events</a>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="shop.html" style="color: white;">Shop</a>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="about_us.html" style="color: white;">About Us</a>
+                </li>
+                <li class="nav-item ms-3 me-3">
+                    <a class="nav-link" href="contact_us.html" style="color: white;">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="top-navbar navbar-nav me-5 d-flex p-0 m-0" style="text-align: center;">
+                <li class="nav-item ms-5 me-1 mt-1">
+                    <!--Modal launch button-->
+                    <a class="nav-link"  data-bs-toggle="modal" data-bs-target="#register" style="color: white;">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Model-->
+    <div class="modal" id="register" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="container-fluid p-0">
+                    <div class="modal-header" style="background-color: #31473A;">
+                        <ul class="nav nav-pills justify-content-center ms-auto" style="text-align: center;">
+                            <li class="nav.item"><a href="#log-in" class="nav-link active" data-bs-toggle="tab" style="color: white;">Log-in</a></li>
+                            <li class="nav.item"><a href="#sign-up" class="nav-link" data-bs-toggle="tab" style="color: white;">Sign-up</a></li>
+                        </ul>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color: white;"></button>
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="log-in">
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="username" type="text" class="form-control" placeholder="Enter text" name="text">
+                                    <label class="form-label" id="username">Username</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="email" type="email" class="form-control" placeholder="Enter email" name="email">
+                                    <label class="form-label" id="email">Email address</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Password</label>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <span>Not a Member?<a href="#" style="color: black;">Sign-up</a></span>
+                                    <button type="button" class="btn" style="background-color: #31473A; color: white;" data-bs-dismiss="modal">Login</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="border-bottom w-100"></div>
+                                    <div class="p-2">Or</div>
+                                    <div class="border-bottom w-100"></div>
+                                </div>
+                                <div class="me-3 ms-3 mb-4">
+                                    <button type="button" class="btn d-flex justify-content-center mt-3" style="background-color: #2980B9; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-facebook me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Facebook</p>
+                                        </a> 
+                                    </button>
+                                    <button type="button" class="btn d-flex justify-content-center mt-4" style="background-color: silver; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-google me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Google</p>
+                                        </a> 
+                                    </button>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div class="tab-pane" style="margin-bottom: 20px;" id="sign-up">
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="username" type="text" class="form-control" placeholder="Enter text" name="text">
+                                    <label class="form-label" id="username">Username</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="email" type="email" class="form-control" placeholder="Enter email" name="email">
+                                    <label class="form-label" id="email">Email address</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="number" type="text" class="form-control" placeholder="Enter Phone Number" name="number">
+                                    <label class="form-label" id="number">Phone Number</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Password</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Confirm Password</label>
+                                </div>
+                                <div class="modal-footer justify-content-between" data-bs-target="#sign-up">
+                                    <span>Already have an account?<a href="#" style="color: black;">Log-in</a></span>
+                                    <button type="button" class="btn" style="background-color: #31473A; color: white;" data-bs-dismiss="modal">Sign-up</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="border-bottom w-100"></div>
+                                    <div class="p-2">Or</div>
+                                    <div class="border-bottom w-100"></div>
+                                </div>
+                                <div class="me-3 ms-3 mb-4">
+                                    <button type="button" class="btn d-flex justify-content-center mt-3" style="background-color: #2980B9; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-facebook me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Facebook</p>
+                                        </a> 
+                                    </button>
+                                    <button type="button" class="btn d-flex justify-content-center mt-4" style="background-color: silver; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-google me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Google</p>
+                                        </a> 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Intro-->
+    <div class="container me-5" style="margin-top: 120px;">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-5 mt-5 me-5">
+                    <h2 style="border-bottom: 2px solid #F09319; width: 385px; margin-left: 40px;" class="mb-3 pb-2">What is Ecosystem</h2>
+                    <p class="p-4">An ecosystem is a dynamic community of living organisms and their non-living environment, intricately connected through energy flows and nutrient cycles. Biotic factors like plants, animals, and microorganisms interact with abiotic factors such as sunlight, water, and soil to create a delicate balance. These ecosystems, whether terrestrial or aquatic, provide essential services like clean air, water, and food, regulate climate, and support biodiversity.</p>
+                </div>
+                <div class="col-md-5 mt-5">
+                    <img src="image/intro_forest.webp" width="100%" height="90%" style="border: none; border-radius: 20px; box-shadow: 0px 0px 15px 20px lightgrey;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--second container-->
+    <div class="container-fluid pb-5 mt-5" style="background-color: #F2E8CF;">
+        <div class="container me-5 mt-4">
+            <div class="col-md-12 pt-5">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="ms-3" style="font-weight: bold;">Stepping Up Progress in this Defining Decade</h3>
+                        <p class="p-4 pt-2">Alongside communities, we're urgently clearing obstacles and finding solutions to the climate, biodiversity crisesand ways to resilent the </p>
+                    </div>
+                    <div class="col-md-4 mt-1">
+                        <div class="first">
+                            <h4><a href="about_us.html" style="text-decoration: none; font-weight: bold;">Who We Are<i class="bi bi-arrow-right-short"></i></a></h4>
+                            <p style="padding-bottom: 43px;">We are dedicated staff, and members advancing effective, lasting by donating and running converstional act on ecosystems through community engagement.</p>
+                        </div>
+                        <div class="second mb-4" style="border-top: 1px solid black; border-bottom: 1px solid black;">
+                            <h4 class="mt-4"><a href="take_action.html" style="text-decoration: none; font-weight: bold;">How To Help<i class="bi bi-arrow-right-short"></i></a></h4>
+                            <p>There are so many ways to make positive change for our planet. Volunteer with us. Learn how to reduce your carbon footprint. Donate to conservation work.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="first">
+                            <h4><a href="about_us.html" style="text-decoration: none; font-weight: bold;">What We Do<i class="bi bi-arrow-right-short"></i></a></h4>
+                            <p class="pb-3">To make the highest possible impact on the envriomental crises, we're developing ideas, amplifying community influencing by reusing the fund of donators and help envriomental resilent by creating and events.</p>
+                        </div>
+                        <div class="second mb-4" style="border-top: 1px solid black; border-bottom: 1px solid black;">
+                            <h4 class="mt-4"><a href="people.html" style="text-decoration: none; font-weight: bold;">Where We Work<i class="bi bi-arrow-right-short"></i></a></h4>
+                            <p>Dense rainforests, remote coral reefs and the hearts of major cities. Our strategies are as diverse as the habitats and geographies in which we work.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Third container-->
+    <div class="container mt-5" style="margin-bottom: 150px;">
+        <div style="text-align: center;" class="pt-5">
+            <h2>The issues we work on</h2>
+            <p class="mt-4 mb-5">Imagine a world where forests flourish and oceans are full of life. Where energy is as clean as a mountain stream. Where everyone has security, dignity and joy. We can't build this future alone, but we can build it together.</p>
+        </div>
+        <div class="container ms-3">
+            <div class="row">
+                <div class="col-md-4 pe-5 ps-5 mt-5 item_image">
+                    <a href="people.html" style="text-decoration: none; color: black;">
+                        <img src="image/people.jpg" width="80%" height="95%" style="border: none;" class="rounded-circle ms-4">
+                        <p class="mt-3" style="text-align: center;">People</p>
+                    </a>
+                </div>
+                <div class="col-md-4 pe-5 ps-5 mt-5 item_image">
+                    <a href="places.html" style="text-decoration: none; color: black;">
+                        <img src="image/eco.jpg" width="80%" height="95%" style="border: none;" class="rounded-circle ms-4">
+                        <p class="mt-3" style="text-align: center;">Places</p>
+                    </a>
+                </div>
+                <div class="col-md-4 pe-5 ps-5 mt-5 item_image">
+                    <a href="wild_life.html" style="text-decoration: none; color: black;">
+                        <img src="image/tiger.jpg" width="80%" height="95%" style="border: none;" class="rounded-circle ms-4">
+                        <p class="mt-3" style="text-align: center;">Wildlife</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Fourth container-->
+    <div class="container-fluid" style="background-color: #F2E8CF;">
+        <div class="container p-3">
+            <div class="row mt-5">
+                <div class="col-md-3 mb-5 pe-5">
+                    <h1 style="margin-bottom: 10px;">Our Goals</h1>
+                    <p class="mt-4">We're racing to hit these targets to help the world reverse climate change and biodiversity loss. Together, we find the paths to make change possible by the local empowerment.</p>
+                    <a href="donate.html"><button class="btn" style="background-color: #31473A; color: white; width: 100%;">Donate Us</button></a>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <div class="d-flex">
+                            <img src="image/icon1.svg" width="20%" class="mb-2">
+                            <h1 style="font-weight: bolder;" class="ms-2">3B</h1>
+                        </div>
+                            <p style="font-size: 18px;">Avoid or sequester 3 billion metric tons of carbon dioxide emissions annually the same as taking 650 million cars off the road every year.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex">
+                            <img src="image/icon2.svg" width="20%" class="mb-2">
+                            <h1 style="font-weight: bolder;" class="ms-2">4B</h1>
+                        </div>
+                        <p style="font-size: 18px;">Conserve 4 billion hectares of marine habitat—more than 10% of the world's oceans—through protected areas, sustainable fishing and more.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <div class="d-flex">
+                            <img src="image/icon3.svg" width="20%" class="mb-2">
+                            <h1 style="font-weight: bolder;" class="ms-2">100M</h1>
+                        </div>
+                        <p style="font-size: 18px;">Help 100 million people at severe risk of climate related emergencies by safeguarding habitats that protect communities.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex">
+                            <img src="image/icon4.svg" width="20%" class="mb-2">
+                            <h1 style="font-weight: bolder;" class="ms-2">30M</h1>
+                        </div>
+                        <p style="font-size: 18px;">Conserve 1 million kilometers of rivers enough to stretch 25 times around the globe plus 30 million hectares of lakes and wetlands.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <div class="d-flex">
+                            <img src="image/icon5.svg" width="20%" class="mb-2">
+                            <h1 style="font-weight: bolder;" class="ms-2">650M</h1>
+                        </div>
+                        <p style="font-size: 18px;">Conserve 650 million hectares—a land area twice the size of India—of biodiverse habitats such as forests, grasslands and desert.</p>
+                    </div>
+                    <div>
+                        <div class="d-flex">
+                            <img src="image/icon6.svg" width="20%" class="mb-2">
+                            <h1 style="font-weight: bolder;" class="ms-2">45M</h1>
+                        </div>
+                        <p style="font-size: 18px;">Support the leadership of 45 million people from Indigenous and local communities in stewarding their environment and securing rights.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-category pt-5 pb-5">
+                <div class="row" style="text-align: center;">
+                    <div class="col-xl-3 col-md-3 mb-30 me-5 ms-5">
+                        <div class="single-category">
+                            <i class="bi bi-geo-alt-fill mt-0 pt-0"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>635J Yoma Avenue Street, Yangon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3 mb-30 me-5 ms-5">
+                        <div class="single-category">
+                            <i class="bi bi-telephone-outbound-fill mt-0 pt-0"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>09454540532</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3 mb-30 me-5 ms-5">
+                        <div class="single-category">
+                            <i class="bi bi-envelope-at-fill mt-0 pt-0"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>info@bio.co.mm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50 mb-5">
+                        <div class="footer-widget-heading">
+                            <h3>Follow us</h3>
+                        </div>
+                        <div style="font-size: 20px;" class="mt-3">
+                            <a href="#" class="me-3 p-3 rounded icon_badge_1" style="background-color: #feda75; color: white;"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="me-3 ms-3 p-3 rounded icon_badge_2" style="background-color: black; color: white;"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="me-3 ms-3 p-3 rounded icon_badge_3" style="background-color: #316FF6; color: white;"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="me-3 ms-3 p-3 rounded icon_badge_4" style="background-color: black; color: white;"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul class="p-0 m-0">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about_us.html">About Us</a></li>
+                                <li><a href="contact_us.html">Contact Us</a></li>
+                                <li><a href="donate.html">Donation</a></li>
+                                <li><a href="event.html">Events</a></li>
+                                <li><a href="#">References</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="subscribe-form">
+                                <form>
+                                    <input type="text" placeholder="Email Address">
+                                    <button onclick="alert('Your email have been recived!')"><i class="bi bi-send-fill"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024, All Right Reserved. Devoloped by <a href="index.html">BioSphere Protect Organization</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
