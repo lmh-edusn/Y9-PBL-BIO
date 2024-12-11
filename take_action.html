@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Action | BIO</title>
+    <!--Web Logo-->
+    <link rel="icon" type="image/x-icon" href="image/ficon.png">
+    <!--Bootstrap CDN link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--Bootstrap icon link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <!--CSS Link-->
+    <link rel="stylesheet" type="text/css" href="take_action.css">
+    <!--AOS link-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <!--Nav-->
+    <nav class="navbar navbar-expand-sm fixed-top" style="background-color: #31473A; font-size: 18px;">
+        <a class="navbar-brand ms-5" style="font-size: 35px;" href="index.html"><img src="image/ficon.png" width="70px"></a>
+        <button class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#my_navbar" style="color: white; border-color: white;">
+            <span><i class="bi bi-list" style="color: white; font-size: 30px;"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="my_navbar">
+            <ul class="top-navbar navbar-nav ms-auto me-auto" style="text-align: center;">
+                <li class="nav-item me-4 ms-3">
+                    <a class="nav-link" href="index.html" style="color: white;">Home</a>
+                </li>
+                <li class="nav-item dropdown me-1 ms-3">
+                    <a class="nav-link" data-bs-toggle="dropdown" href="#" style="color: white;">Our Work<i class="bi bi-caret-down-fill ms-2"></i></a>
+                    <ul class="dropdown-menu" style="text-align: center;">
+                        <li><a class="dropdown-item" href="people.html">People</a></li>
+                        <li><a class="dropdown-item" href="places.html">Places</a></li>
+                        <li><a class="dropdown-item" href="wild_life.html">Wildlife</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown me-1 ms-3">
+                    <a class="nav-link" data-bs-toggle="dropdown" href="#" style="color: white;">Get Involed<i class="bi bi-caret-down-fill ms-2"></i></a>
+                    <ul class="dropdown-menu" style="text-align: center;">
+                        <li><a class="dropdown-item" href="donate.html">Donate</a></li>
+                        <li><a class="dropdown-item" href="take_action.html">Take Action</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="event.html" style="color: white;">Events</a>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="shop.html" style="color: white;">Shop</a>
+                </li>
+                <li class="nav-item me-1 ms-3">
+                    <a class="nav-link" href="about_us.html" style="color: white;">About Us</a>
+                </li>
+                <li class="nav-item ms-3 me-3">
+                    <a class="nav-link" href="contact_us.html" style="color: white;">Contact Us</a>
+                </li>
+            </ul>
+            <ul class="top-navbar navbar-nav me-5 d-flex p-0 m-0" style="text-align: center;">
+                <li class="nav-item ms-5 me-1 mt-1">
+                    <!--Modal launch button-->
+                    <a class="nav-link"  data-bs-toggle="modal" data-bs-target="#register" style="color: white;">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Model-->
+    <div class="modal" id="register" data-bs-backdrop="static" data-bs-keyboard="false" >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="container-fluid p-0">
+                    <div class="modal-header" style="background-color: #31473A;">
+                        <ul class="nav nav-pills justify-content-center ms-auto" style="text-align: center;">
+                            <li class="nav.item"><a href="#log-in" class="nav-link active" data-bs-toggle="tab" style="color: white;">Log-in</a></li>
+                            <li class="nav.item"><a href="#sign-up" class="nav-link" data-bs-toggle="tab" style="color: white;">Sign-up</a></li>
+                        </ul>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" style="background-color: white;"></button>
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="log-in">
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="username" type="text" class="form-control" placeholder="Enter text" name="text">
+                                    <label class="form-label" id="username">Username</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="email" type="email" class="form-control" placeholder="Enter email" name="email">
+                                    <label class="form-label" id="email">Email address</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Password</label>
+                                </div>
+                                <div class="modal-footer justify-content-between">
+                                    <span>Not a Member?<a href="#" style="color: black;">Sign-up</a></span>
+                                    <button type="button" class="btn" style="background-color: #31473A; color: white;" data-bs-dismiss="modal">Login</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="border-bottom w-100"></div>
+                                    <div class="p-2">Or</div>
+                                    <div class="border-bottom w-100"></div>
+                                </div>
+                                <div class="me-3 ms-3 mb-4">
+                                    <button type="button" class="btn d-flex justify-content-center mt-3" style="background-color: #2980B9; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-facebook me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Facebook</p>
+                                        </a> 
+                                    </button>
+                                    <button type="button" class="btn d-flex justify-content-center mt-4" style="background-color: silver; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-google me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Google</p>
+                                        </a> 
+                                    </button>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tab-content">
+                            <div class="tab-pane" style="margin-bottom: 20px;" id="sign-up">
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="username" type="text" class="form-control" placeholder="Enter text" name="text">
+                                    <label class="form-label" id="username">Username</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="email" type="email" class="form-control" placeholder="Enter email" name="email">
+                                    <label class="form-label" id="email">Email address</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="number" type="text" class="form-control" placeholder="Enter Phone Number" name="number">
+                                    <label class="form-label" id="number">Phone Number</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Password</label>
+                                </div>
+                                <div class="form-floating my-3 me-3 ms-3">
+                                    <input for="psw" type="password" class="form-control" placeholder="Enter password" name="password">
+                                    <label class="form-label" id="psw">Confirm Password</label>
+                                </div>
+                                <div class="modal-footer justify-content-between" data-bs-target="#sign-up">
+                                    <span>Already have an account?<a href="#" style="color: black;">Log-in</a></span>
+                                    <button type="button" class="btn" style="background-color: #31473A; color: white;" data-bs-dismiss="modal">Sign-up</button>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <div class="border-bottom w-100"></div>
+                                    <div class="p-2">Or</div>
+                                    <div class="border-bottom w-100"></div>
+                                </div>
+                                <div class="me-3 ms-3 mb-4">
+                                    <button type="button" class="btn d-flex justify-content-center mt-3" style="background-color: #2980B9; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-facebook me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Facebook</p>
+                                        </a> 
+                                    </button>
+                                    <button type="button" class="btn d-flex justify-content-center mt-4" style="background-color: silver; border: none; border-radius: 10px; width: 100%;">
+                                        <a href="#" style="color: black; text-decoration: none; display: flex;">
+                                            <i style="font-size: 30px; margin-top: 5px;" class="bi bi-google me-5"></i>
+                                            <p class="ms-2 me-5 mt-3" style="font-size: 16px;">Login with Google</p>
+                                        </a> 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Intro-->
+    <div class="container-fluid p-0" style="margin-top: 91px;">
+        <img src="image/lands.jpg" width="100%" height="460px" style="opacity: 0.8;">
+    </div>
+    <div class="intro_container">
+        <p style="font-weight: bolder; font-size: 80px;">Take Action</p>
+        <p style="font-weight: bolder; font-size: 40px;">For Nature, For our Homeland</p>
+    </div>
+    <!--First container-->
+    <div class="container mt-5">
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3 mt-5">
+                    <div class="card">
+                    <img src="image/monkey.jpg" height="270px" class="card-img-top">
+                        <div class="card-body">
+                            <h4 style="font-weight: bold;">Take Action to Restore Snub-nosed Monkey</h4>
+                            <p class="card-text" style="font-size: 15px;">Please tell Congress that you support the Burmese snub-nosed monkey Management Act to revive and preserve Indigenous cultures, Tribal landscapes, and iconic wildlife.</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#monkey" style="background-color: #31473A; width: 100%;"><a href="#" style="color: white; text-decoration: none;">Take Action</a></button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="monkey" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header" style="background-color: #31473A;">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: white;">Take Action to Restore Snub-nosed Monkey</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white;"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">1. Support Conservation Organizations</h5>
+                                            <ul>
+                                                <li>Donate to our organizations work to protect snub-nosed monkey habitats and combat threats like poaching and deforestation.</li>
+                                                <li>Volunteer your time to conservation efforts, if possible. This could involve participating in habitat restoration projects or wildlife monitoring programs.</li>
+                                            </ul>
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">2. Educate Yourself and Others</h5>
+                                            <ul>
+                                                <li>Learn about the threats facing snub-nosed monkeys and the importance of their conservation.</li>
+                                                <li>Share information about the importance of buffalo restoration with your friends and family.</li>
+                                                <li>Support responsible ecotourism that contributes to conservation efforts and minimizes negative impacts on wildlife and habitats.</li>
+                                            </ul>
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">3. Reduce Your Carbon Footprint</h5>
+                                            <ul>
+                                                <li>Climate change is a significant threat to snub-nosed monkeys and their habitats. Reduce your carbon footprint by conserving energy, reducing waste, and choosing sustainable transportation options.</li>
+                                                <li>Support policies that promote renewable energy and sustainable practices.</li>
+                                            </ul>
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">4. Advocate for Strong Conservation Laws</h5>
+                                            <ul>
+                                                <li>Contact your elected officials and urge them to support strong laws protecting snub-nosed monkeys and their habitats.</li>
+                                                <li>Support policies that promote sustainable land use and protect forests.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer" style="background-color: #31473A;">
+                                            
+                                            <button type="button" class="btn" style="background-color: white;"><a href="donate.html" style="text-decoration: none; color: black;">Donate</a></button>
+                                            <button type="button" class="btn" style="background-color: white;"><a href="event.html" style="text-decoration: none; color: black;">Events</a></button>
+                                            <button type="button" class="btn" style="background-color: white;" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="card">
+                    <img src="image/grassland.jpg" height="270px" class="card-img-top">
+                        <div class="card-body">
+                            <h4 style="font-weight: bold;">Speak Out to Restore Grassland Habitat</h4>
+                            <p class="card-text" style="font-size: 15px;">Tell your community members of Congress to fully support and help archive the North American, Southeast Asia, and Africa Grasslands Conservation Act.</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#grassland" style="background-color: #31473A; width: 100%;"><a href="#" style="color: white; text-decoration: none;">Take Action</a></button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="grassland" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header" style="background-color: #31473A;">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: white;">Speak Out to Restore Grassland Habitat</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white;"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">1. Educate Yourself and Others</h5>
+                                            <ul>
+                                                <li>Learn about the importance of grasslands for biodiversity, climate regulation, and ecosystem services.</li>
+                                                <li>Share your knowledge with friends, family, and community members through conversations, social media, or presentations.</li>
+                                                <li>Support our organizations to act grassland conservation and restoration.</li>
+                                            </ul>
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">2. Support Grassland Conservation Organizations</h5>
+                                            <ul>
+                                                <li>Donate to ourorganizations or local conservation groups working to protect and restore grasslands</li>
+                                                <li>Volunteer your time to participate in grassland restoration projects or outreach activities.</li>
+                                            </ul>
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">3. Advocate for Policy Changes</h5>
+                                            <ul>
+                                                <li>Contact your elected representatives to express your support for policies that protect and restore grasslands.</li>
+                                                <li>Urge policymakers to support conservation programs, sustainable land use practices, and incentives for farmers and ranchers to adopt grassland-friendly practices.</li>
+                                                <li>Participate in public hearings and comment on proposed regulations that affect grasslands.</li>
+                                            </ul>
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">4. Support Sustainable Agriculture</h5>
+                                            <ul>
+                                                <li>Choose to purchase products from farmers and ranchers who use sustainable grazing practices that promote grassland health.</li>
+                                                <li>Support initiatives that promote rotational grazing, cover cropping, and other practices that improve soil health and biodiversity.</li>
+                                            </ul>
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">5. Organize Community Events</h5>
+                                            <ul>
+                                                <li>Host community events, such as nature walks, workshops, or film screenings, to raise awareness about grassland conservation.</li>
+                                                <li>Collaborate with local schools and organizations to educate the next generation about the importance of grasslands.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer" style="background-color: #31473A;">
+                                            <button type="button" class="btn" style="background-color: white;"><a href="donate.html" style="text-decoration: none; color: black;">Donate</a></button>
+                                            <button type="button" class="btn" style="background-color: white;"><a href="event.html" style="text-decoration: none; color: black;">Events</a></button>
+                                            <button type="button" class="btn" style="background-color: white;" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="card">
+                    <img src="image/clean_energy.jpg" height="270px" class="card-img-top">
+                        <div class="card-body">
+                            <h4 style="font-weight: bold;">Take Action for Nature and Clean Energy</h4>
+                            <p class="card-text" style="font-size: 15px;">Please urge Congress and your governor to invest in climate solutions to recover wildlife habitat and make our communities more resilient to climate change.</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#energy" style="background-color: #31473A; width: 100%;"><a href="#" style="color: white; text-decoration: none;">Take Action</a></button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="energy" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header" style="background-color: #31473A;">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: white;">Take Action for Nature and Clean Energy</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white;"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">1. Reduce your carbon footprint</h5>
+                                            <ul>
+                                                <li>Turn off lights, unplug electronics, and adjust your thermostat.</li>
+                                                <li>Take shorter showers, fix leaks, and water your lawn efficiently.</li>
+                                                <li>Reduce, reuse, and recycle. Compost food scraps.</li>
+                                                <li>Walk, bike, carpool, or use public transportation.</li>
+                                            </ul>
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">2. Support clean energy</h5>
+                                            <ul>
+                                                <li>Switch to a utility that sources energy from renewable sources like wind or solar.</li>
+                                                <li>Look for ENERGY STAR-certified products.</li>
+                                            </ul>
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">3. Educate yourself and others</h5>
+                                            <ul>
+                                                <li>Learn about climate change and environmental issues.</li>
+                                                <li>Share information with friends and family.</li>
+                                                <li>Volunteer with environmental organizations.</li>
+                                            </ul>
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">4. Participate in community actions</h5>
+                                            <ul>
+                                                <li>Organize clean-up events and tree-planting initiatives.</li>
+                                                <li>Support local businesses that prioritize sustainability.</li>
+                                            </ul>
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">5. Join environmental organizations</h5>
+                                            <ul>
+                                                <li>Participate in local and global initiatives.</li>
+                                                <li>Donate to organizations working on climate change and environmental conservation.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer" style="background-color: #31473A;">
+                                            <button type="button" class="btn" style="background-color: white;"><a href="donate.html" style="text-decoration: none; color: black;">Donate</a></button>
+                                            <button type="button" class="btn" style="background-color: white;"><a href="event.html" style="text-decoration: none; color: black;">Events</a></button>
+                                            <button type="button" class="btn" style="background-color: white;" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="card">
+                    <img src="image/zombie_mine.jpg" height="270px" class="card-img-top">
+                        <div class="card-body">
+                            <h4 style="font-weight: bold;">Responsible for Clean Zombie Mines</h4>
+                            <p class="card-text" style="font-size: 15px;">Tell your federal legislators to support zombie mine prevention bills to ensure coal companies not the people are responsible for mine clean up and the impact on enviromental crisis.</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#mine" style="background-color: #31473A; width: 100%;"><a href="#" style="color: white; text-decoration: none;">Take Action</a></button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="mine" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header" style="background-color: #31473A;">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: white;">Responsible for Clean Zombie Mines</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white;"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">1. Volunteer with Mine Clearance Organizations</h5>
+                                            <ul>
+                                                <li>Organizations like the Mine Action Group of Myanmar (MAG) and Halo Trust work to clear landmines and educate communities about the dangers. Volunteering with them can directly contribute to mine clearance efforts.</li>
+                                                <li>Many local organizations are working on mine clearance and victim assistance. Consider donating to or volunteering with these organizations.</li>
+                                                <li>Raise awareness about the landmine problem in Myanmar through social media, community events, or by contacting your local representatives.</li>
+                                            </ul>
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">2. Advocacy for Clean Zombie Mines</h5>
+                                            <ul>
+                                                <li>Write to your government representatives urging them to support mine clearance efforts in Myanmar and to pressure the Myanmar military to cease the use of landmines.</li>
+                                                <li>Support international organizations like the United Nations and the International Committee of the Red Cross (ICRC) in their efforts to address the landmine issue globally.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer" style="background-color: #31473A;">
+                                            <button type="button" class="btn" style="background-color: white;"><a href="donate.html" style="text-decoration: none; color: black;">Donate</a></button>
+                                            <button type="button" class="btn" style="background-color: white;"><a href="event.html" style="text-decoration: none; color: black;">Events</a></button>
+                                            <button type="button" class="btn" style="background-color: white;" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="row">
+                <div class="col-md-3 mt-5">
+                    <div class="card">
+                    <img src="image/salmon.jpg" height="270px" class="card-img-top">
+                        <div class="card-body">
+                            <h4 style="font-weight: bold;">Keep salmon recovery flowing</h4>
+                            <p class="card-text" style="font-size: 15px;">We need our leaders to act quickly to modernize our energy and transportation services, and restore abundant wild salmon to the Columbia River Basin for the better water quality.</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#salmon" style="background-color: #31473A; width: 100%;"><a href="#" style="color: white; text-decoration: none;">Take Action</a></button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="salmon" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header" style="background-color: #31473A;">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel" style="color: white;">Keep salmon recovery flowing</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" style="background-color: white;"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">1. Reduce Your Carbon Footprint</h5>
+                                            <ul>
+                                                <li>Climate change is a major threat to salmon populations.bReduce your carbon footprint by conserving energy, reducing waste, and choosing sustainable transportation options.</li>
+                                                <li>Water is essential for salmon habitat. Conserve water by taking shorter showers, fixing leaks, and watering your lawn efficiently.</li>
+                                                <li>Choose sustainably sourced seafood and avoid overfished species.</li>
+                                            </ul>
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">2. Community Actions</h5>
+                                            <ul>
+                                                <li>Volunteer with organizations working to restore salmon habitat, monitor fish populations, or remove invasive species.</li>
+                                                <li>Attend local events focused on salmon conservation and restoration.</li>
+                                                <li>Support businesses that prioritize sustainability and environmental protection.</li>
+                                            </ul>
+                                            <h5 style="border-bottom: 2px solid black; font-weight: bold;" class="pb-2">3. Advocacy</h5>
+                                            <ul>
+                                                <li>Contact your local, state, and federal representatives to urge them to support policies that protect salmon and their habitat.</li>
+                                                <li>Donate to organizations working to protect salmon and their ecosystems.</li>
+                                                <li>Research the specific threats facing salmon in your region and take action accordingly.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="modal-footer" style="background-color: #31473A;">
+                                            <button type="button" class="btn" style="background-color: white;"><a href="donate.html" style="text-decoration: none; color: black;">Donate</a></button>
+                                            <button type="button" class="btn" style="background-color: white;"><a href="event.html" style="text-decoration: none; color: black;">Events</a></button>
+                                            <button type="button" class="btn" style="background-color: white;" data-bs-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="card">
+                    <img src="image/polar_bear.jpg" height="270px" class="card-img-top">
+                        <div class="card-body">
+                            <h4 style="font-weight: bold;">Prevent Polar Bear Habitat from Ice Melting </h4>
+                            <p class="card-text" style="font-size: 15px;">Tell your state governor and local leaders of your community to use funding from recent federal climate legislation to invest in local built- and natural- climate solutions.</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #31473A; width: 100%;"><a href="#" style="color: white; text-decoration: none;">Take Action</a></button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="card">
+                    <img src="image/bumblebee.jpg" height="270px" class="card-img-top">
+                        <div class="card-body">
+                            <h4 style="font-weight: bold;">Defend Our Climate For Bumblebees</h4>
+                            <p class="card-text" style="font-size: 15px;">Sign the petition to Congress urging them to defend climate legislation from recent attacks and damage on the Bumblebees and the habitat of land animals.</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #31473A; width: 100%;"><a href="#" style="color: white; text-decoration: none;">Take Action</a></button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="card">
+                    <img src="image/oak_flat.jpg" height="270px" class="card-img-top">
+                        <div class="card-body">
+                            <h4 style="font-weight: bold;">Protect Oak Flat from Mining</h4>
+                            <p class="card-text" style="font-size: 15px;">Please tell your conuntry President and Secretary to protect wildlife and Indigenous sites by stopping a proposed mega-copper mine in the country like USA and China.</p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #31473A; width: 100%;"><a href="#" style="color: white; text-decoration: none;">Take Action</a></button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="footer-section mt-5">
+        <div class="container">
+            <div class="footer-category pt-5 pb-5">
+                <div class="row" style="text-align: center;">
+                    <div class="col-xl-3 col-md-3 mb-30 me-5 ms-5">
+                        <div class="single-category">
+                            <i class="bi bi-geo-alt-fill mt-0 pt-0"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>635J Yoma Avenue Street, Yangon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3 mb-30 me-5 ms-5">
+                        <div class="single-category">
+                            <i class="bi bi-telephone-outbound-fill mt-0 pt-0"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>09454540532</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-3 mb-30 me-5 ms-5">
+                        <div class="single-category">
+                            <i class="bi bi-envelope-at-fill mt-0 pt-0"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>info@bio.co.mm</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50 mb-5">
+                        <div class="footer-widget-heading">
+                            <h3>Follow us</h3>
+                        </div>
+                        <div style="font-size: 20px;" class="mt-3">
+                            <a href="#" class="me-3 p-3 rounded icon_badge_1" style="background-color: #feda75; color: white;"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="me-3 ms-3 p-3 rounded icon_badge_2" style="background-color: black; color: white;"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="me-3 ms-3 p-3 rounded icon_badge_3" style="background-color: #316FF6; color: white;"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="me-3 ms-3 p-3 rounded icon_badge_4" style="background-color: black; color: white;"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul class="p-0 m-0">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about_us.html">About Us</a></li>
+                                <li><a href="contact_us.html">Contact Us</a></li>
+                                <li><a href="donate.html">Donation</a></li>
+                                <li><a href="event.html">Events</a></li>
+                                <li><a href="#">References</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="subscribe-form">
+                                <form>
+                                    <input type="text" placeholder="Email Address">
+                                    <button onclick="alert('Your email have been recived!')"><i class="bi bi-send-fill"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024, All Right Reserved. Devoloped by <a href="index.html">BioSphere Protect Organization</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
